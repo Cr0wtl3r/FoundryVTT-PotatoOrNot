@@ -1,20 +1,36 @@
 {
   "id": "potato-or-not",
-  "title": "Potato Or Not",
-  "description": "Is your computer a potato or not? If so, this mod will prompt you that you might want to turn down your graphics.",
-  "version": "0.5.1",
-  "compatibility": {
-    "minimum": "10",
-    "verified": "12",
-    "maximum": "12"
-  },
+  "title": "Auto-Potato (Performance Presets)",
+  "description": "Detects PC performance and suggests graphics presets to ensure a smooth experience for every player. Is your PC a potato? Find out!",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "Wasp",
       "url": "https://github.com/Haxxer",
       "discord": "Wasp#2005"
+    },
+    {
+      "name": "Cr0wtl3r",
+      "url": "https://github.com/Cr0wtl3r",
+      "discord": "#"
     }
   ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.346.0"
+  },
+  "relationships": {
+    "dependencies": [
+      {
+        "id": "plutonium",
+        "type": "module",
+        "manifest": "https://github.com/TheGiddyLimit/plutonium-next/releases/latest/download/manifest.json",
+        "compatibility": {
+          "minimum": "2.9.4"
+        }
+      }
+    ]
+  },
   "esmodules": [
     "scripts/main.js"
   ],
@@ -25,44 +41,18 @@
     {
       "lang": "en",
       "name": "English",
-      "path": "languages/en.json"
-    },
-    {
-      "lang": "fr",
-      "name": "Français",
-      "path": "languages/fr.json"
-    },
-    {
-      "lang": "fr-FR",
-      "name": "Français (France)",
-      "path": "languages/fr-FR.json"
+      "path": "lang/en.json"
     },
     {
       "lang": "pt-BR",
       "name": "Português (Brasil)",
-      "path": "languages/pt-BR.json"
-    },
-    {
-      "lang": "es",
-      "name": "Español",
-      "path": "languages/es.json"
-    },
-    {
-      "lang": "zh-TW",
-      "name": "正體中文",
-      "path": "languages/zh-TW.json"
-    },
-    {
-      "lang": "ja",
-      "name": "日本語",
-      "path": "languages/ja.json"
+      "path": "lang/pt-BR.json"
     }
   ],
-  "url": "https://github.com/fantasycalendar/FoundryVTT-PotatoOrNot",
-  "manifest": "https://github.com/fantasycalendar/FoundryVTT-PotatoOrNot/releases/latest/download/manifest.json",
-  "download": "https://github.com/fantasycalendar/FoundryVTT-PotatoOrNot/releases/latest/download/module.zip",
-  "readme": "https://github.com/fantasycalendar/FoundryVTT-PotatoOrNot/blob/master/README.md",
-  "bugs": "https://github.com/fantasycalendar/FoundryVTT-PotatoOrNot/issues",
+  "url": "https://github.com/Cr0wtl3r/FoundryVTT-PotatoOrNot",
+  "manifest": "https://github.com/Cr0wtl3r/FoundryVTT-PotatoOrNot/releases/latest/download/manifest.json",
+  "download": "https://github.com/Cr0wtl3r/FoundryVTT-PotatoOrNot/releases/latest/download/module.zip",
+  "readme": "https://github.com/Cr0wtl3r/FoundryVTT-PotatoOrNot/blob/main/README.md",
+  "bugs": "https://github.com/Cr0wtl3r/FoundryVTT-PotatoOrNot/issues",
   "allowBugReporter": true
 }
-

@@ -1,0 +1,29 @@
+<form autocomplete="off">
+    <h1 id="potato-title">Choose Your Performance Level</h1>
+    <p class="notes">Select a preset that best matches your computer's performance. You can change this at any time in the module settings.</p>
+
+    <div class='potato-master-container'>
+        {{#each presets}}
+        <div class='potato-level-container {{#if this.isActive}}active{{/if}}' data-level="{{this.index}}">
+            <div class="potato-level-row">
+                <img src='modules/potato-or-not/assets/images/{{this.name.toLowerCase}}_potato.jpg' alt="{{this.name}}">
+            </div>
+            <div class="potato-level-row-text">
+                <h2>{{this.name}}</h2>
+                <p>{{this.description}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    
+    <input type="hidden" name="selectedLevel" value="{{(lookup presets @root.savedLevel).index}}"/>
+    
+    <hr>
+    
+    <div class="dialog-buttons">
+        <button type="submit" class="dialog-button">
+            <i class="fas fa-check"></i>
+            Apply & Reload
+        </button>
+    </div>
+</form>
