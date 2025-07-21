@@ -1,0 +1,29 @@
+{
+	"POTATO-OR-NOT": {
+		"PresetSelector": {
+			"Title": "Performance Preset Selector",
+			"Notes": "Select a preset that best matches your computer's performance. You can change this at any time in the module settings.",
+			"Apply": "Apply & Reload"
+		},
+		"Presets": {
+			"Potato": {
+				"Name": "Potato",
+				"Description": "Maximum performance. For systems that struggle to run animations."
+			},
+			"Balanced": {
+				"Name": "Balanced",
+				"Description": "A good balance between visuals and performance."
+			},
+			"Quality": {
+				"Name": "Quality",
+				"Description": "Best visual quality. For systems that can handle it."
+			}
+		},
+		"Notifications": {
+			"ApplyingPreset": "Applying '{name}' performance preset...",
+			"ReloadPromptTitle": "Settings Applied",
+			"ReloadPromptContent": "<p>Your performance settings have been updated. A reload is required for all changes to take effect.</p><p>Do you want to reload now?</p>",
+			"ReloadPromptButton": "Reload Now"
+		}
+	}
+}

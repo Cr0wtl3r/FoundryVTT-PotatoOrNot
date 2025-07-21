@@ -1,0 +1,29 @@
+{
+	"POTATO-OR-NOT": {
+		"PresetSelector": {
+			"Title": "Seletor de Predefinição de Desempenho",
+			"Notes": "Selecione a predefinição que melhor se adapta ao desempenho do seu computador. Você pode alterar isso a qualquer momento nas configurações do módulo.",
+			"Apply": "Aplicar & Reiniciar"
+		},
+		"Presets": {
+			"Potato": {
+				"Name": "Batata",
+				"Description": "Desempenho máximo. Para sistemas com dificuldade para rodar animações."
+			},
+			"Balanced": {
+				"Name": "Equilibrado",
+				"Description": "Um bom equilíbrio entre visuais e desempenho."
+			},
+			"Quality": {
+				"Name": "Qualidade",
+				"Description": "Melhor qualidade visual. Para sistemas que aguentam o processamento."
+			}
+		},
+		"Notifications": {
+			"ApplyingPreset": "Aplicando a predefinição de desempenho '{name}'...",
+			"ReloadPromptTitle": "Configurações Aplicadas",
+			"ReloadPromptContent": "<p>Suas configurações de desempenho foram atualizadas. É necessário reiniciar para que todas as mudanças tenham efeito.</p><p>Deseja reiniciar agora?</p>",
+			"ReloadPromptButton": "Reiniciar Agora"
+		}
+	}
+}
