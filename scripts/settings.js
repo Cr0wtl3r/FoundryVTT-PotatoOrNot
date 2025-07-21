@@ -9,6 +9,7 @@ export const SETTING_KEYS = {
 
 export const PRESETS = [
   {
+    id: 'potato',
     name: 'Batata Velha',
     description: 'Máxima performance. Para computadores que estão respirando por aparelhos.',
     settings: {
@@ -23,6 +24,7 @@ export const PRESETS = [
   },
 
   {
+    id: 'balanced',
     name: 'Batata balanceada',
     description: 'Um balanço razoável entre visual e performance. Uma máquina velha, mas não tanto.',
     settings: {
@@ -37,6 +39,7 @@ export const PRESETS = [
   },
 
   {
+    id: 'quality',
     name: 'Bata Premium',
     description: 'Melhor qualidade visual. Pra computadores de burgueses safados.',
     settings: {
