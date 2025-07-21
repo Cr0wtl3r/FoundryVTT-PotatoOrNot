@@ -21,6 +21,7 @@ export class PresetSelectorApp extends FormApplication {
   /** @override */
   getData(options = {}) {
     const savedLevel = game.settings.get(ID, SETTING_KEYS.SAVED_PRESET_LEVEL);
+    // Adiciona um índice a cada preset para uso no template
     const presetsWithIndex = PRESETS.map((preset, index) => ({
       ...preset,
       index: index,
@@ -29,6 +30,7 @@ export class PresetSelectorApp extends FormApplication {
 
     return {
       presets: presetsWithIndex,
+      savedLevel: savedLevel
     };
   }
 
@@ -42,17 +44,22 @@ export class PresetSelectorApp extends FormApplication {
   }
 
   /**
-   * Manipula o clique em um dos cartões de preset.
-   * @param {MouseEvent} event - O evento de clique.
-   */
+     * Manipula o clique em um dos cartões de preset.
+     * @param {MouseEvent} event - O evento de clique.
+     */
   _onPresetClick(event) {
     const target = event.currentTarget;
     const level = target.dataset.level;
 
-    this.element.querySelectorAll('.potato-level-container').forEach((el) => el.classList.remove('active'));
+    // ----- INÍCIO DA CORREÇÃO -----
+    // Usamos .find() do jQuery em vez de querySelectorAll
+    // E .removeClass() do jQuery em vez de um loop.
+    this.element.find('.potato-level-container').removeClass('active');
     target.classList.add('active');
 
-    this.element.querySelector('input[name="selectedLevel"]').value = level;
+    // Usamos .val() do jQuery para definir o valor do input.
+    this.element.find('input[name="selectedLevel"]').val(level);
+    // ----- FIM DA CORREÇÃO -----
   }
 
   /**

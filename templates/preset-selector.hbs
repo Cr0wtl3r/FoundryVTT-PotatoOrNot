@@ -6,7 +6,7 @@
         {{#each presets}}
         <div class='potato-level-container {{#if this.isActive}}active{{/if}}' data-level="{{this.index}}">
             <div class="potato-level-row">
-                <img src='modules/potato-or-not/assets/images/{{this.name.toLowerCase}}_potato.jpg' alt="{{this.name}}">
+                <img src='/assets/images/{{this.name.toLowerCase}}_potato.jpg' alt="{{this.name}}">
             </div>
             <div class="potato-level-row-text">
                 <h2>{{this.name}}</h2>
@@ -15,11 +15,11 @@
         </div>
         {{/each}}
     </div>
-    
-    <input type="hidden" name="selectedLevel" value="{{(lookup presets @root.savedLevel).index}}"/>
-    
+
+    <input type="hidden" name="selectedLevel" value="{{savedLevel}}"/>
+
     <hr>
-    
+
     <div class="dialog-buttons">
         <button type="submit" class="dialog-button">
             <i class="fas fa-check"></i>
